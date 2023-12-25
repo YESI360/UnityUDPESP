@@ -1,0 +1,53 @@
+project: ServerUDPClase06
+LO MISMO PERO DESORDENADO
+
+
+project: ServerUDP
+
+>>>>>>>DISCRETO ////CambiodeEstad
+00Cubo
+======Esc. CubeArrows01
+	script MoverUDP Ori01
+
+ARDUINO LANA [MoverUDP_Ori02]
+pote=auxi
+udp.broadcastTo(pote.c_str(), 1234);
+
+======Esc. CubeArrows02
+	script MoverUDPOri02
+
+ARDUINO LANA [MoverUDP_Ori02]
+pote=auxi
+udp.broadcastTo(pote.c_str(), 1234);
+
+ >>>>>>>>potenciometro_ValoresContinuos
+01Sphere
+=======Esc. Light+Sound*
+	script UDPScale
+
+ARDUINO LANA [MainPOTE]
+salto=auxi
+udp.broadcastTo(String(outputValue).c_str(), 1234)
+
+=======Esc. pd
+	script UDPLibPD
+
+ARDUINO LANA [MainPOTE]
+salto=auxi
+udp.broadcastTo(String(outputValue).c_str(), 1234)
+
+
+
+
+
+
+
+
+
+
+*Ligh intensity + sounds
+
+02Audio
+	ejemplos para reproducir sonidos
+	
+03Shaders

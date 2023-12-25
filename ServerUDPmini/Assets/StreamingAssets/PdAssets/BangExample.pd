@@ -1,0 +1,25 @@
+#N canvas 480 49 706 425 10;
+#X obj 6 107 cnv 16 162 60 empty empty Amplitude_Envelope 24 -12 0
+16 #acdcb4 #404040 0;
+#X obj 14 18 osc~ 440;
+#X obj 80 160 vline~;
+#X msg 84 113 1 10;
+#X msg 131 119 0 10;
+#X obj 131 65 receive VolumeDown;
+#X obj 84 46 receive VolumeUp;
+#X text 5 1 Sine Oscillator;
+#X text 83 27 These receive objects are how we receive;
+#X text 200 39 signals from our Unity;
+#X text 213 50 scene. In this case \,;
+#X text 258 61 bangs sent to;
+#X text 265 73 VolumeUp and;
+#X text 193 84 VolumeDown will trigger;
+#X text 258 95 a ramp of the;
+#X text 194 106 oscillator's amplitude.;
+#X obj 260 230 mixer;
+#X connect 1 0 16 0;
+#X connect 2 0 16 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 5 0 4 0;
+#X connect 6 0 3 0;
