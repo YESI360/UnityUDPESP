@@ -1,6 +1,6 @@
 # UDPUnityESP
 ## Conectar Unity con un ESP32 vía UDP usando entorno Arduino
-#VER VIDEO DEMO unity udp.mp4
+# VER VIDEO DEMO unity udp.mp4
 ### Propósito
 Este es un procedimiento template, lo más simple posible, para interconectar una placa basada en el módulo Espressif ESP32 con un programa desarrollado en Unity que se ejecute en una computadora conectada a la misma red de área local (LAN) que la placa mencionada.
 
